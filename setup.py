@@ -29,6 +29,12 @@ setup(
     packages=find_packages(exclude=["tests", "assets"]),
     python_requires=">=3",
     zip_safe=False,
+    install_requires=[
+        "numpy",
+        "pyarrow",
+        "regex",
+        "emoji==1.2.0",
+    ],
     package_data={
         "": [
             "pecab/_resources/arrays.arrow",

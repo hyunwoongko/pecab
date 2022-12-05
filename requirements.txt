@@ -1,4 +1,0 @@
-numpy
-pyarrow
-regex
-emoji==1.2.0

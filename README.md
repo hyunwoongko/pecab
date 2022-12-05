@@ -10,12 +10,12 @@ So, since a few years ago, I wanted to make a pure python version of Mecab that 
 Now, Pecab came out. This ensures results very similar to Mecab and at the same time easy to install.
 For more details, please refer the following.
 
-## 1. Installation
+## Installation
 ```console
 pip install pecab
 ```
 
-## 2. Usages
+## Usages
 The user API of Pecab is inspired by [KoNLPy](https://github.com/konlpy/konlpy), 
 a one of the most famous natural language processing package in South Korea.
 
@@ -86,7 +86,7 @@ pecab.pos("토끼정에서 크림 우동을 시켰어요.", drop_space=False)
 [('토끼', 'NNG'), ('정', 'NNG'), ('에서', 'JKB'), (' ', 'SP'), ('크림', 'NNG'), (' ', 'SP'), ('우동', 'NNG'), ('을', 'JKO'), (' ', 'SP'), ('시켰', 'VV+EP'), ('어요', 'EF'), ('.', 'SF')]
 ```
 
-## 3. Implementation Details
+## Implementation Details
 In fact, there was a pure python Korean morpheme analyzer before. 
 Its name is [Pynori](https://github.com/gritmind/python-nori).
 I've been using Pynori well, and a big thank you to the developer of Pynori. 
@@ -126,7 +126,7 @@ However, I wanted to make it very easy to use, like Mecab, and not require users
 So I thought about the API and finally decided to have an API similar to KoNLPy that users are already familiar with.
 I believe that these APIs are much more user-friendly and will make the library more easy to use.
 
-## 4. License
+## License
 Pecab project is licensed under the terms of the **Apache License 2.0**.
 
 ```

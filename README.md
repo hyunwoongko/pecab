@@ -100,8 +100,8 @@ This allows data in virtual memory (disk) to be used as-is without copying almos
 In fact, Pynori takes close to 5 seconds to load Known dict file to memory, and this comes with a very heavy burden.
 I designed the matrix file to be saved using `numpy.memmap` and the vocabulary using memmapable `pyarrow.Table`, 
 
-However, there was one problem with designing this. 
-The data structure called Trie is quite difficult to store in memmap form. 
+However, there was one problem with designing this.
+The Trie data structure which was used in Pynori is quite difficult to store in memmap form.
 In fact, numpy only supports arrays and matrices well, and pyarrow only supports tables in most cases. 
 Therefore, I initially wanted to use a table form instead of a trie. 
 However, Table has a linear time complexity of O(n) to index a particular key, 

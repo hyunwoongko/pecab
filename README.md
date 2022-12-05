@@ -97,7 +97,7 @@ So I solved this with the two key ideas: **1) zero-copy memory mapping** and **2
 
 The first key idea was **zero copy memory mapping**.
 This allows data in virtual memory (disk) to be used as-is without copying almost to memory. 
-In fact, Pynori takes close to 5 seconds to load Known dict file to memory, and this comes with a very heavy burden.
+In fact, Pynori takes close to 5 seconds to load `mecab_csv.pkl` file to memory, and this comes with a very heavy burden.
 I designed the matrix file to be saved using `numpy.memmap` and the vocabulary using memmapable `pyarrow.Table`, 
 
 However, there was one problem with designing this.

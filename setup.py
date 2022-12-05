@@ -29,5 +29,6 @@ setup(
     packages=find_packages(exclude=["tests", "assets"]),
     python_requires=">=3",
     zip_safe=False,
+    package_data={"": ["pecab/_resources/*"]},
     include_package_data=True,
 )

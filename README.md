@@ -120,7 +120,7 @@ In conclusion, it took almost 50 ~ 100 times less time than before to read these
 and memory consumption was also significantly reduced because they did not actually reside in memory.
 
 ### 2) User-friendly and pythonic API
-Another difficulty I had while using Pynori was the User API. 
+Another difficulty I had while using Pynori was the user API. 
 It has a fairly Java-like API and expressions, and to use it I had to pass a lot of parameters when creating the main object. 
 However, I wanted to make it very easy to use, like Mecab, and not require users to parse the output themselves. 
 So I thought about the API and finally decided to have an API similar to KoNLPy that users are already familiar with.

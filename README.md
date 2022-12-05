@@ -43,16 +43,16 @@ pecab.nouns("자장면을 먹을까? 짬뽕을 먹을까? 그것이 고민이로
 
 #### 5) `Pecab(user_dict=List[str])`: Set up a user dictionary.
 Note that words included in the user dictionary **cannot contain spaces**.
+- Without `user_dict`
 ```python
-# without `user_dict`
 from pecab import PeCab
 
 pecab = PeCab()
 pecab.pos("저는 삼성디지털프라자에서 지펠냉장고를 샀어요.")
 [('저', 'NP'), ('는', 'JX'), ('삼성', 'NNP'), ('디지털', 'NNP'), ('프라자', 'NNP'), ('에서', 'JKB'), ('지', 'NNP'), ('펠', 'NNP'), ('냉장고', 'NNG'), ('를', 'JKO'), ('샀', 'VV+EP'), ('어요', 'EF'), ('.', 'SF')]
 ```
+- With `user_dict`
 ```python
-# with `user_dict`
 from pecab import PeCab
 
 user_dict = ["삼성디지털프라자", "지펠냉장고"]

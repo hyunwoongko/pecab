@@ -26,7 +26,7 @@ try:
     for lang in ["pt", "it", "es", "en"]:
         _emojis.update(emoji.unicode_codes.UNICODE_EMOJI[lang])
 except Exception as e:
-    raise ImportError("kss requires `emoji==1.2.0`. " "please install that version.")
+    raise ImportError("pecab requires `emoji==1.2.0`. " "please install that version.")
 
 _emojis.update({k: "unicode" for k in unicodes})
 

@@ -44,7 +44,7 @@ pecab.nouns("자장면을 먹을까? 짬뽕을 먹을까? 그것이 고민이로
 ["자장면", "짬뽕", "그것", "고민"]
 ```
 
-#### 5) `Pecab(user_dict=List[str])`: Set up a user dictionary.
+#### 5) `Pecab(user_dict=List[str])`: applies a user dictionary.
 Note that words included in the user dictionary **cannot contain spaces**.
 - Without `user_dict`
 ```python
@@ -64,7 +64,7 @@ pecab.pos("저는 삼성디지털프라자에서 지펠냉장고를 샀어요.")
 [('저', 'NP'), ('는', 'JX'), ('삼성디지털프라자', 'NNG'), ('에서', 'JKB'), ('지펠냉장고', 'NNG'), ('를', 'JKO'), ('샀', 'VV+EP'), ('어요', 'EF'), ('.', 'SF')]
 ```
 
-#### 6) `PeCab(split_compound=bool)`: Divide compound words into smaller pieces.
+#### 6) `PeCab(split_compound=bool)`: devides compound words into smaller pieces.
 ```python
 from pecab import PeCab
 

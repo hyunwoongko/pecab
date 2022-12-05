@@ -6,11 +6,10 @@ label = [
     ("문장", "NNG"),
     ("입니다", "VCP+EF"),
     (".", "SF"),
-    ("🧡", "SY"),
 ]
 
 pecab = PeCab()
-output = pecab.pos("이것은 문장입니다.🧡")
+output = pecab.pos("이것은 문장입니다.")
 
 if output != label:
     raise Exception(f"test failed :(\noutput: {output}")

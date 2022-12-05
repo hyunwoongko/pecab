@@ -1,7 +1,5 @@
 import pandas as pd
 
-from pecab._utils._consts import Pos
-
 names = [
     "surface",
     "left_id",
@@ -26,7 +24,7 @@ for entry in data_pandas.to_dict("records"):
     for key, val in entry.items():
         if "useless" not in key:
             if key == "POS_type":
-                val = "Pos.MORPHEME"
+                val = "MORP"
             elif key == "morphemes":
                 val = None
             elif key == "surface":
@@ -41,16 +39,13 @@ data_entries["EMOJI"] = (
         "right_id": 3566,
         "word_cost": 3640,
         "POS": "SY",
-        "POS_type": Pos.MORPHEME,
+        "POS_type": "MORP",
         "morphemes": None,
     },
 )
 
-with open("unknown.py", mode="w") as fp:
-    code = f"""from pecab.utils.pos import Pos
-
-UNK = {data_entries}
-"""
+with open("../_utils/_unknown.py", mode="w") as fp:
+    code = f"UNK = {data_entries}"
     code = code.replace("'Pos.MORPHEME'", "Pos.MORPHEME")
     fp.write(code + "\n")
 

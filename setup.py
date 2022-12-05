@@ -29,6 +29,12 @@ setup(
     packages=find_packages(exclude=["tests", "assets"]),
     python_requires=">=3",
     zip_safe=False,
-    package_data={"": ["pecab/_resources/*"]},
+    package_data={
+        "": [
+            "pecab/_resources/arrays.arrow",
+            "pecab/_resources/words.arrow",
+            "pecab/_resources/matrix.npy",
+        ]
+    },
     include_package_data=True,
 )

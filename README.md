@@ -31,8 +31,8 @@ pecab.morphs("아버지가방에들어가시다")
 
 #### 3) `pos(text)`: returns morphemes and POS tags together.
 ```python
-pecab.pos("이것은 문장입니다.🧡")
-[('이것', 'NP'), ('은', 'JX'), ('문장', 'NNG'), ('입니다', 'VCP+EF'), ('.', 'SF'), ('🧡', 'SY')]
+pecab.pos("이것은 문장입니다.")
+[('이것', 'NP'), ('은', 'JX'), ('문장', 'NNG'), ('입니다', 'VCP+EF'), ('.', 'SF')]
 ```
 
 #### 4) `nouns(text)`: returns all nouns in the input text.

@@ -9,7 +9,7 @@ import pyarrow as pa
 import unicodedata
 
 from pecab._datrie import DoubleArrayTrie
-from pecab._resources.unknown import UNK
+from pecab._utils._unknown import UNK
 from pecab._tokens import DictionaryToken, TokenAttributes, DecompoundToken
 from pecab._user_dict import UserDictionary
 from pecab._utils._char_definition import CharacterDefinition, character_category_map

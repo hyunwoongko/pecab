@@ -113,11 +113,11 @@ Therefore, I initially wanted to use a table form instead of a trie.
 However, Table has a linear time complexity of O(n) to index a particular key, 
 so the searching time could be actually very longer than before. 
 So the second key idea was **Double Array Trie (DATrie)**.
-The Double Array Trie that can be saved in memmap files easily, so it was one of the best option for me.
-I wanted to implement everything in Python to facilitate package installation, but unfortunately I couldn't find the DATrie source code implemented in pure python. 
-So I made it myself, and you can find the implementation [here](https://github.com/hyunwoongko/pydatrie).
 DATrie has only two simple integer arrays (base, check) instead of a complex node-based structure unlike general tries, 
 and all keys can be easily retrieved with them. And these two arrays are super easy to make with memmap !
+The Double Array Trie can be saved in memmap files easily, so it was one of the best option for me.
+I wanted to implement everything in Python to facilitate package installation, but unfortunately I couldn't find the DATrie source code implemented in pure python. 
+So I made it myself, and you can find the implementation [here](https://github.com/hyunwoongko/pydatrie).
 
 In conclusion, it took almost 50 ~ 100 times less time than before to read these two files,
 and memory consumption was also significantly reduced because they did not actually reside in memory.

@@ -73,7 +73,7 @@ pecab.morphs("가벼운 냉장고를 샀어요.")
 ['가볍', 'ᆫ', '냉장', '고', '를', '사', 'ㅏㅆ', '어요', '.']
 ```
 
-#### 7) `ANY_PECAB_FUNCTION(text, drop_space=bool)`: Determines whether spaces are returned or not.
+#### 7) `ANY_PECAB_FUNCTION(text, drop_space=bool)`: determines whether spaces are returned or not.
 This can be used for all of `morphs`, `pos`, `nouns`. default value of this is `True`.
 ```python
 from pecab import PeCab

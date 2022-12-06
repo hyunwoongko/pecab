@@ -13,9 +13,9 @@ jobs:
         with:
           python-version: 3.9.12
 
-      - name: Install pecab
+      - name: Install pecab locally
         run: |
-          pip install pecab/.
+          pip install .
       - name: Run the test suite
         run: |
           pytest -v

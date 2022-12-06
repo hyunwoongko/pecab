@@ -1,4 +1,4 @@
-name: Testing PeCab on Windows with Pytest
+name: windows-latest
 on: push
 
 jobs:

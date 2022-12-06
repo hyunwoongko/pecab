@@ -1,4 +1,4 @@
-name: Testing PeCab on Ubuntu with Pytest
+name: ubuntu-latest
 on: push
 
 jobs:

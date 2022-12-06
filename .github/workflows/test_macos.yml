@@ -1,4 +1,4 @@
-name: Testing PeCab on macOS with Pytest
+name: macos-latest
 on: push
 
 jobs:

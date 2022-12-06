@@ -3,7 +3,7 @@
 <a href="https://github.com/hyunwoongko/pecab/issues"><img alt="Issues" src="https://img.shields.io/github/issues/hyunwoongko/pecab"/></a>
 
 Pecab is pure python Korean morpheme analyzer based on [Mecab](https://github.com/taku910/mecab).
-Mecab is a CRF-based morpheme analyzer made by Taku Kudo at 2011. It is very fast and accurate at the same time, which is why it is still very popular even though it is quite old.
+Mecab is a CRF-based morpheme analyzer made by Taku Kudo in 2011. It is very fast and accurate at the same time, which is why it is still very popular even though it is quite old.
 However, it is known to be one of the most tricky libraries to install, and in fact many people have had a hard time installing Mecab.
 
 So, since a few years ago, I wanted to make a pure python version of Mecab that was easy to install while inheriting the advantages of Mecab.

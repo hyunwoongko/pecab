@@ -34,6 +34,7 @@ setup(
         "pyarrow",
         "regex",
         "emoji==1.2.0",
+        "pytest"
     ],
     package_data={
         "": [

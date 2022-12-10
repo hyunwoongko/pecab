@@ -1,3 +1,4 @@
+from functools import lru_cache
 from typing import Optional, List
 
 from pecab._postprocessor import Postprocessor
@@ -12,6 +13,7 @@ class PeCab:
         self.tokenizer = Tokenizer(user_dict, split_compound)
         self.postprocessor = Postprocessor()
 
+    @lru_cache(maxsize=5000)
     def _tokenize(self, text: str):
         self.tokenizer.set_input(text)
         while self.tokenizer.increment_token():

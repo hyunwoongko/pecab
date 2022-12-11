@@ -32,17 +32,15 @@ for entry in data_pandas.to_dict("records"):
             data_entry[key] = val
     data_entries[surface] = data_entry
 
-data_entries["EMOJI"] = (
-    {
-        "surface": "EMOJI",
-        "left_id": 1801,
-        "right_id": 3566,
-        "word_cost": 3640,
-        "POS": "SY",
-        "POS_type": "MORP",
-        "morphemes": None,
-    },
-)
+data_entries["EMOJI"] = {
+    "surface": "EMOJI",
+    "left_id": 1801,
+    "right_id": 3566,
+    "word_cost": 3640,
+    "POS": "SY",
+    "POS_type": "MORP",
+    "morphemes": None,
+}
 
 with open("../_utils/_unknown.py", mode="w") as fp:
     code = f"UNK = {data_entries}"

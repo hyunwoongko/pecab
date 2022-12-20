@@ -47,7 +47,7 @@ pecab.nouns("자장면을 먹을까? 짬뽕을 먹을까? 그것이 고민이로
 ["자장면", "짬뽕", "그것", "고민"]
 ```
 
-#### 5) `Pecab(user_dict=List[str])`: applies a user dictionary.
+#### 5) `Pecab(user_dict=List[str])`: applies an user dictionary.
 Note that words included in the user dictionary **cannot contain spaces**.
 - Without `user_dict`
 ```python

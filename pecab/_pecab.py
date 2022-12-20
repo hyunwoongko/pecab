@@ -37,7 +37,8 @@ class PeCab:
         return [
             token
             for token in tokenization_output["terms"]
-            if drop_space is False or (drop_space and token != " ")
+            if drop_space is False
+            or (drop_space and token not in " \t\n\r\f\v\u200b\u200c\u2060\ufeff")
         ]
 
     def pos(self, text: str, drop_space: bool = True):
@@ -47,7 +48,8 @@ class PeCab:
             for token, pos in zip(
                 tokenization_output["terms"], tokenization_output["pos_tags"]
             )
-            if drop_space is False or (drop_space and token != " ")
+            if drop_space is False
+            or (drop_space and token not in " \t\n\r\f\v\u200b\u200c\u2060\ufeff")
         ]
 
     def nouns(self, text: str, drop_space: bool = True):
@@ -57,6 +59,9 @@ class PeCab:
             for token, pos in zip(
                 tokenization_output["terms"], tokenization_output["pos_tags"]
             )
-            if (drop_space is False or (drop_space and token != " "))
+            if (
+                drop_space is False
+                or (drop_space and token not in " \t\n\r\f\v\u200b\u200c\u2060\ufeff")
+            )
             and pos.startswith("N")
         ]

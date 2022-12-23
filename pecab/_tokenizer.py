@@ -30,7 +30,7 @@ class Tokenizer:
         )
         self.conn_costs = np.memmap(
             os.path.join(PATH, "_resources", "matrix.npy"),
-            mode="r+",
+            mode="r",
             dtype="int16",
             shape=Tokenization.CONN_SHAPE,
         )

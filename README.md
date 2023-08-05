@@ -20,7 +20,7 @@ pip install pecab
 
 ## Usages
 The user API of Pecab is inspired by [KoNLPy](https://github.com/konlpy/konlpy), 
-a one of the most famous natural language processing package in South Korea.
+one of the most famous natural language processing package in South Korea.
 
 #### 1) `PeCab()`: creating Pecab object.
 ```python

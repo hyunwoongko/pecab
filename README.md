@@ -1,9 +1,9 @@
 # Pecab
 <a href="https://github.com/hyunwoongko/pecab/releases"><img alt="GitHub release" src="https://img.shields.io/github/release/hyunwoongko/pecab.svg" /></a> 
 <a href="https://github.com/hyunwoongko/pecab/issues"><img alt="Issues" src="https://img.shields.io/github/issues/hyunwoongko/pecab"/></a>
-[![Action Status Windows](https://github.com/eubinecto/pecab/actions/workflows/test_windows.yml/badge.svg)](https://github.com/eubinecto/pecab/actions)
-[![Action Status Ubuntu](https://github.com/eubinecto/pecab/actions/workflows/test_ubuntu.yml/badge.svg)](https://github.com/eubinecto/pecab/actions)
-[![Action Status macOS](https://github.com/eubinecto/pecab/actions/workflows/test_macos.yml/badge.svg)](https://github.com/eubinecto/pecab/actions)
+[![Action Status Windows](https://github.com/hyunwoongko/pecab/actions/workflows/test_windows.yml/badge.svg)](https://github.com/hyunwoongko/pecab/actions)
+[![Action Status Ubuntu](https://github.com/hyunwoongko/pecab/actions/workflows/test_ubuntu.yml/badge.svg)](https://github.com/hyunwoongko/pecab/actions)
+[![Action Status macOS](https://github.com/hyunwoongko/pecab/actions/workflows/test_macos.yml/badge.svg)](https://github.com/hyunwoongko/pecab/actions)
 
 Pecab is pure python Korean morpheme analyzer based on [Mecab](https://github.com/taku910/mecab).
 Mecab is a CRF-based morpheme analyzer made by Taku Kudo in 2011. It is very fast and accurate at the same time, which is why it is still very popular even though it is quite old.
